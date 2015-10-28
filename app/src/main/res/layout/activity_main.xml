@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lat ="
+        android:id="@+id/LatView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long ="
+        android:id="@+id/LongView"
+        android:layout_below="@+id/LatView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/StopButton"
+        android:layout_below="@+id/LongView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low"
+        android:id="@+id/LowPro"
+        android:layout_alignTop="@+id/StopButton"
+        android:layout_toRightOf="@+id/StopButton"
+        android:layout_toEndOf="@+id/StopButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Med"
+        android:id="@+id/MedPro"
+        android:layout_alignTop="@+id/LowPro"
+        android:layout_toRightOf="@+id/LowPro"
+        android:layout_toEndOf="@+id/LowPro" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High"
+        android:id="@+id/HiPro"
+        android:layout_alignTop="@+id/MedPro"
+        android:layout_toRightOf="@+id/MedPro"
+        android:layout_toEndOf="@+id/MedPro" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google API"
+        android:id="@+id/googleButton"
+        android:layout_below="@+id/StopButton"
+        android:layout_alignRight="@+id/StopButton"
+        android:layout_alignEnd="@+id/StopButton" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:id="@+id/dbCheck"
+        android:layout_alignTop="@+id/googleButton"
+        android:layout_toRightOf="@+id/googleButton"
+        android:layout_toEndOf="@+id/googleButton" />
+
+</RelativeLayout>
